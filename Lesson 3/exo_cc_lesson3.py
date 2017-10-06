@@ -26,8 +26,11 @@ villes = []
 for a in range(0,100):
     villes.append((soup1.find_all("td",class_="xl65")[3*a+1].text).strip())
 for a in range(0,100):
+    print(villes[a])
     for b in range(0,100):
-        url1 = 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + villes[a] + '&destinations=' + villes[b] + '&key=AIzaSyCpXCOmYOUigbPjEvUjmYJdqIWZbFUkpDQ'
-        r = requests.get(url1)
-        print(r.json())
+        if (a != b):
+            url1 = 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + villes[a] + '&destinations=' + villes[b] + '&key=AIzaSyCpXCOmYOUigbPjEvUjmYJdqIWZbFUkpDQ'
+            r = requests.get(url1)
+            print(r.json()['rows'][0]['elements'][0]['distance']['text'])
+            print(villes[b])
      
