@@ -29,9 +29,6 @@ def getURLRenaultZoe(ville):
             result_search.append(s.a['href'][2:])
     return result_search
 
-
-
-
 villes = ['ile_de_france','aquitaine','provence_alpes_cote_d_azur']
 for ville in villes:
     results_search[ville] = getURLRenaultZoe(ville)
