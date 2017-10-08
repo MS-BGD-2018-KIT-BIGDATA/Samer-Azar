@@ -18,6 +18,7 @@ def getSoupFromURL(url, method='get', data={}):
     else:
         return None
 
+<<<<<<< HEAD
 def getURLRenaultZoe(ville):
     result_search = []
     url = 'https://www.leboncoin.fr/annonces/offres/' + ville + '?th=1&q=Renault%20Zo%E9&it=1'
@@ -39,3 +40,19 @@ for ville in villes:
     print(ville)
     print("----")
     print(results_search[ville])
+=======
+url = 'https://lespoir.jimdo.com/2015/03/05/classement-des-plus-grandes-villes-de-france-source-insee/'
+soup1 = getSoupFromURL(url)
+villes = []
+for a in range(0,100):
+    villes.append((soup1.find_all("td",class_="xl65")[3*a+1].text).strip())
+for a in range(0,100):
+    print(villes[a])
+    for b in range(0,100):
+        if (a != b):
+            url1 = 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + villes[a] + '&destinations=' + villes[b] + '&key=AIzaSyCpXCOmYOUigbPjEvUjmYJdqIWZbFUkpDQ'
+            r = requests.get(url1)
+            print(r.json()['rows'][0]['elements'][0]['distance']['text'])
+            print(villes[b])
+     
+>>>>>>> 2d31a6e72c86bf113c28a5b23d1d9741d60f8900
