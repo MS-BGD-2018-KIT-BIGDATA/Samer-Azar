@@ -1,4 +1,4 @@
-# 60% DONE
+# 80% DONE
 
 import requests
 from bs4 import BeautifulSoup
@@ -63,8 +63,44 @@ def getKm(soup):
     km = km.split('KM')
     return km[0]
     
+def getProOuPart(soup):
+    if soup.find_all(class_="ispro"):
+        return 'Professionnel'
+    else:
+        return 'Particulier'
+    
+def getPrixArgus(version,annee):
+    urlRenaultCote = 'https://www.lacentrale.fr/cote-voitures-renault-zoe--' + annee + '-.html'
+    soup = getSoupFromURL(urlRenaultCote)
+    if soup:
+        all_versions = soup.find_all(class_="listingResultLine")
+        if (version == 'Intens'):
+            #print(version)
+            for v in all_versions:
+                versionURL = re.search('intens',v.find("a")['href'])
+                if versionURL:
+                    soup2 = getSoupFromURL("https://www.lacentrale.fr/"+v.find("a")['href'])
+                    return soup2.find(class_="jsRefinedQuot").text
+        elif (version == "Life"):
+            #print(version)
+            for v in all_versions:
+                versionURL = re.search('life',v.find("a")['href'])
+                if versionURL:
+                    soup2 = getSoupFromURL("https://www.lacentrale.fr/"+v.find("a")['href'])
+                    return soup2.find(class_="jsRefinedQuot").text
+        elif (version == "Zen"):
+            #print(version)
+            for v in all_versions:
+                versionURL = re.search('zen',v.find("a")['href'])
+                if versionURL:
+                    soup2 = getSoupFromURL("https://www.lacentrale.fr/"+v.find("a")['href'])
+                    return soup2.find(class_="jsRefinedQuot").text
+        else:
+            return ""
+
+ 
 villes = ['ile_de_france','aquitaine','provence_alpes_cote_d_azur']
-labels = ['Version','Annee','Prix','Kilometrage']
+labels = ['Version','Annee','Prix','Kilometrage','Pro/Part','Telephone','PrixArgus','Comparaison']
 results_search = {}
 for ville in villes:
     print('-----')
@@ -73,12 +109,16 @@ for ville in villes:
     fichier = []
     results_search[ville] = getURLRenaultZoe(ville)
     for url in results_search[ville]:
+        soup = getSoupFromURL("http://" + url)
         description = soup.find_all('p',class_='value')[0].text
         version = getVersion(description)
-        soup = getSoupFromURL("http://" + url)
         annee = getYear(soup)
         prix = getPrice(soup)
         kilometrage = getKm(soup)
-        fichier.append([version,annee,prix,kilometrage])
+        proOuPart = getProOuPart(soup)
+        prixArgus = getPrixArgus(version,annee)
+        comparaison = ""
+        telephone = ""
+        fichier.append([version,annee,prix,kilometrage,proOuPart,telephone,prixArgus,comparaison])
     df = pd.DataFrame.from_records(fichier, columns=labels)
     df.to_csv(ville + '.csv')

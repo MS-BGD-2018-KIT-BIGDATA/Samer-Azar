@@ -1,45 +1,47 @@
-,Version,Annee,Prix,Kilometrage
-0,Life,2016,9 500,11 000 
-1,n/a,2013,8 000,49 000 
-2,Zen,2016,11 995,20 300 
-3,Life,2015,10 990,6 600 
-4,Zen,2014,8 990,38 087 
-5,Zen,2014,9 490,55 000 
-6,n/a,2016,10 950,8 169 
-7,Life,2014,8 990,38 049 
-8,n/a,2015,9 290,48 957 
-9,Life,2014,9 000,45 300 
-10,Life,2016,13 300,3 000 
-11,Life,2013,9 200,470 
-12,Life,2016,11 990,4 619 
-13,Life,2014,8 990,15 143 
-14,Zen,2014,8 690,24 088 
-15,Life,2014,8 490,34 301 
-16,Life,2014,8 990,10 690 
-17,Life,2014,9 490,37 441 
-18,Intens,2016,10 500,7 701 
-19,Life,2015,10 450,16 370 
-20,Intens,2014,8 990,9 094 
-21,Zen,2017,15 000,9 000 
-22,n/a,2013,8 500,29 500 
-23,n/a,2015,10 990,6 430 
-24,Zen,2015,9 950,20 942 
-25,Life,2014,10 590,42 836 
-26,Intens,2015,9 490,6 791 
-27,Life,2015,14 000,30 000 
-28,Life,2015,9 990,20 142 
-29,Life,2014,9 500,31 807 
-30,Zen,2016,12 990,5 145 
-31,Life,2016,12 990,10 
-32,Life,2016,13 500,3 000 
-33,Life,2015,9 500,17 611 
-34,Life,2016,9 500,32 000 
-35,Life,2013,8 200,46 300 
-36,n/a,2015,9 450,17 500 
-37,Life,2014,10 290,26 440 
-38,Life,2015,9 990,17 527 
-39,Zen,2015,10 990,6 119 
-40,Zen,2015,9 990,10 295 
-41,Life,2014,10 100,35 858 
-42,Zen,2014,7 950,42 351 
-43,Life,2014,10 400,9 890 
+,Version,Annee,Prix,Kilometrage,Pro/Part,Telephone,PrixArgus,Comparaison
+0,Zen,2014,10 100,35 858 ,Professionnel,,10 272,
+1,Life,2014,8 990,46 385 ,Professionnel,,9 644,
+2,Life,2014,9 500,48 000 ,Particulier,,9 644,
+3,Zen,2013,9 500,38 077 ,Professionnel,,8 372,
+4,n/a,2016,9 500,11 000 ,Particulier,,,
+5,Zen,2013,8 000,49 000 ,Particulier,,8 372,
+6,Life,2016,11 995,20 300 ,Professionnel,,14 848,
+7,Life,2014,10 400,9 890 ,Professionnel,,9 644,
+8,Zen,2015,10 990,6 600 ,Professionnel,,10 434,
+9,Zen,2014,8 600,38 087 ,Professionnel,,10 272,
+10,n/a,2014,9 490,55 000 ,Professionnel,,,
+11,Life,2016,10 950,8 169 ,Professionnel,,14 848,
+12,n/a,2014,8 990,38 049 ,Professionnel,,,
+13,Life,2015,9 290,48 957 ,Professionnel,,12 773,
+14,Life,2014,9 000,45 300 ,Particulier,,9 644,
+15,Life,2016,13 300,3 000 ,Professionnel,,14 848,
+16,Life,2013,9 200,470 ,Professionnel,,10 324,
+17,Life,2016,11 990,4 619 ,Professionnel,,14 848,
+18,Zen,2014,8 990,15 143 ,Professionnel,,10 272,
+19,Life,2014,8 690,24 088 ,Professionnel,,9 644,
+20,Life,2014,8 490,34 301 ,Professionnel,,9 644,
+21,Life,2014,8 990,10 690 ,Professionnel,,9 644,
+22,Intens,2014,9 490,37 441 ,Professionnel,,12 194,
+23,Life,2016,10 500,7 701 ,Professionnel,,14 848,
+24,Intens,2015,10 450,16 370 ,Professionnel,,12 769,
+25,Zen,2014,8 990,9 094 ,Professionnel,,10 272,
+26,n/a,2017,15 000,9 000 ,Particulier,,,
+27,n/a,2013,8 500,29 500 ,Particulier,,,
+28,Zen,2015,10 990,6 430 ,Professionnel,,10 434,
+29,Life,2015,9 950,20 942 ,Professionnel,,12 773,
+30,Intens,2014,10 590,42 836 ,Professionnel,,12 194,
+31,Life,2015,9 490,6 791 ,Professionnel,,12 773,
+32,Life,2015,14 000,30 000 ,Particulier,,12 773,
+33,Life,2015,9 990,20 142 ,Professionnel,,12 773,
+34,Zen,2014,9 500,31 807 ,Professionnel,,10 272,
+35,Life,2016,12 989,5 145 ,Professionnel,,14 848,
+36,Life,2016,12 990,10 ,Professionnel,,14 848,
+37,Life,2016,13 500,3 000 ,Professionnel,,14 848,
+38,Life,2015,9 500,17 611 ,Professionnel,,12 773,
+39,Life,2016,9 500,32 000 ,Particulier,,14 848,
+40,n/a,2013,8 200,46 300 ,Particulier,,,
+41,Life,2015,9 450,17 500 ,Professionnel,,12 773,
+42,Zen,2015,9 990,17 527 ,Professionnel,,10 434,
+43,Zen,2015,10 490,6 119 ,Professionnel,,10 434,
+44,Life,2015,9 600,10 295 ,Professionnel,,12 773,
+45,Life,2014,7 950,42 351 ,Professionnel,,9 644,
