@@ -18,29 +18,6 @@ def getSoupFromURL(url, method='get', data={}):
     else:
         return None
 
-<<<<<<< HEAD
-def getURLRenaultZoe(ville):
-    result_search = []
-    url = 'https://www.leboncoin.fr/annonces/offres/' + ville + '?th=1&q=Renault%20Zo%E9&it=1'
-    soup = getSoupFromURL(url)
-    for s in soup.find_all('li',itemtype="http://schema.org/Offer"):
-        regex = r"www.leboncoin.fr/voitures/"
-        match = re.search(regex, s.a['href'])
-        if match:
-            result_search.append(s.a['href'][2:])
-    return result_search
-
-
-
-
-villes = ['ile_de_france','aquitaine','provence_alpes_cote_d_azur']
-for ville in villes:
-    results_search[ville] = getURLRenaultZoe(ville)
-    print("----")
-    print(ville)
-    print("----")
-    print(results_search[ville])
-=======
 url = 'https://lespoir.jimdo.com/2015/03/05/classement-des-plus-grandes-villes-de-france-source-insee/'
 soup1 = getSoupFromURL(url)
 villes = []
@@ -55,4 +32,3 @@ for a in range(0,100):
             print(r.json()['rows'][0]['elements'][0]['distance']['text'])
             print(villes[b])
      
->>>>>>> 2d31a6e72c86bf113c28a5b23d1d9741d60f8900
