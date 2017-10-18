@@ -1,41 +1,48 @@
-,Version,Annee,Prix,Kilometrage,Pro/Part,Telephone,PrixArgus,Comparaison
-0,Intens,2014,8 990,36 556 ,Professionnel,,12 194,
-1,Life,2014,8 880,24 890 ,Professionnel,,9 644,
-2,Intens,2014,9 590,31 456 ,Professionnel,,12 194,
-3,Zen,2013,6 990,46 946 ,Professionnel,,8 372,
-4,Intens,2013,8 290,41 370 ,Professionnel,,9 820,
-5,Intens,2015,10 490,16 468 ,Professionnel,,12 769,
-6,n/a,2015,11 700,14 546 ,Professionnel,,,
-7,Intens,2014,9 690,14 000 ,Professionnel,,12 194,
-8,Zen,2015,11 700,17 558 ,Professionnel,,10 434,
-9,n/a,2017,16 900,11 600 ,Particulier,,,
-10,Life,2016,9 490,9 446 ,Professionnel,,14 848,
-11,Intens,2016,12 790,13 731 ,Professionnel,,15 160,
-12,Intens,2013,8 990,13 976 ,Professionnel,,9 820,
-13,Life,2016,12 900,4 500 ,Professionnel,,14 848,
-14,Intens,2015,10 000,30 000 ,Professionnel,,12 769,
-15,Zen,2015,11 700,11 480 ,Professionnel,,10 434,
-16,Intens,2015,10 290,9 449 ,Professionnel,,12 769,
-17,Life,2015,9 990,18 768 ,Professionnel,,12 773,
-18,n/a,2016,10 900,8 800 ,Particulier,,,
-19,n/a,2014,9 800,37 413 ,Professionnel,,,
-20,Zen,2014,9 290,23 286 ,Professionnel,,10 272,
-21,Life,2013,8 900,60 990 ,Professionnel,,10 324,
-22,Intens,2014,9 900,28 600 ,Professionnel,,12 194,
-23,Intens,2014,11 490,9 222 ,Professionnel,,12 194,
-24,Life,2014,9 490,25 333 ,Professionnel,,9 644,
-25,Life,2016,10 990,7 911 ,Professionnel,,14 848,
-26,Life,2015,10 700,820 ,Professionnel,,12 773,
-27,Intens,2015,11 590,16 133 ,Professionnel,,12 769,
-28,Zen,2015,10 590,14 538 ,Professionnel,,10 434,
-29,Zen,2014,9 490,27 158 ,Professionnel,,10 272,
-30,Zen,2014,8 900,51 657 ,Professionnel,,10 272,
-31,Life,2016,10 990,7 911 ,Professionnel,,14 848,
-32,Life,2016,11 790,8 184 ,Professionnel,,14 848,
-33,Intens,2015,9 790,11 359 ,Professionnel,,12 769,
-34,Zen,2013,7 500,41 535 ,Professionnel,,8 372,
-35,Life,2016,11 999,5 500 ,Professionnel,,14 848,
-36,Intens,2013,7 500,76 000 ,Particulier,,9 820,
-37,Zen,2013,7 900,57 314 ,Professionnel,,8 372,
-38,Intens,2015,11 990,8 109 ,Professionnel,,12 769,
-39,Zen,2015,11 700,7 868 ,Professionnel,,10 434,
+,Version,Annee,Prix,Kilometrage,Pro/Part,PrixArgus,Comparaison
+0,Zen,2016,14000,7 609 ,Particulier,14 597,Moins chère
+1,Intens,2016,12900,9 000 ,Professionnel,12 094,Plus chère
+2,Life,2016,10900,7 456 ,Professionnel,11 426,Moins chère
+3,Intens,2013,8990,13 976 ,Professionnel,8 410,Plus chère
+4,Life,2015,9990,18 768 ,Professionnel,12 218,Moins chère
+5,Intens,2014,9990,31 200 ,Professionnel,11 978,Moins chère
+6,Life,2016,11390,8 184 ,Professionnel,11 426,Moins chère
+7,Life,2014,9490,30 219 ,Professionnel,10 212,Moins chère
+8,Intens,2016,10690,11 457 ,Professionnel,12 094,Moins chère
+9,Intens,2013,8290,41 370 ,Professionnel,8 410,Moins chère
+10,Life,2014,9390,13 906 ,Professionnel,10 212,Moins chère
+11,Intens,2015,9990,41 642 ,Professionnel,10 828,Moins chère
+12,Life,2015,10490,14 351 ,Professionnel,12 218,Moins chère
+13,Intens,2013,9990,36 812 ,Professionnel,8 410,Plus chère
+14,Zen,2014,8990,47 822 ,Professionnel,11 578,Moins chère
+15,Intens,2014,8990,36 556 ,Professionnel,11 978,Moins chère
+16,Life,2014,8880,24 890 ,Professionnel,10 212,Moins chère
+17,Intens,2014,9590,31 456 ,Professionnel,11 978,Moins chère
+18,Intens,2015,11990,8 109 ,Professionnel,10 828,Plus chère
+19,Zen,2015,11700,7 868 ,Professionnel,13 189,Moins chère
+20,Intens,2015,10490,16 468 ,Professionnel,10 828,Moins chère
+21,n/a,2015,11700,14 546 ,Professionnel,, 
+22,Intens,2014,9690,14 000 ,Professionnel,11 978,Moins chère
+23,Zen,2015,11700,17 558 ,Professionnel,13 189,Moins chère
+24,n/a,2017,16900,11 600 ,Particulier,, 
+25,Life,2016,9490,9 446 ,Professionnel,11 426,Moins chère
+26,Intens,2016,12790,13 731 ,Professionnel,12 094,Plus chère
+27,Life,2016,12900,4 500 ,Professionnel,11 426,Plus chère
+28,Intens,2015,10000,30 000 ,Professionnel,10 828,Moins chère
+29,Zen,2015,11700,11 480 ,Professionnel,13 189,Moins chère
+30,n/a,2016,10900,8 800 ,Particulier,, 
+31,n/a,2014,9800,37 413 ,Professionnel,, 
+32,Zen,2014,9290,23 286 ,Professionnel,11 578,Moins chère
+33,Life,2013,8900,60 990 ,Professionnel,9 335,Moins chère
+34,Intens,2014,9900,28 600 ,Professionnel,11 978,Moins chère
+35,Intens,2014,11490,9 222 ,Professionnel,11 978,Moins chère
+36,Life,2014,9490,25 333 ,Professionnel,10 212,Moins chère
+37,Life,2016,10990,7 911 ,Professionnel,11 426,Moins chère
+38,Life,2015,10700,820 ,Professionnel,12 218,Moins chère
+39,Intens,2015,11590,16 133 ,Professionnel,10 828,Plus chère
+40,Zen,2014,9390,27 158 ,Professionnel,11 578,Moins chère
+41,Zen,2014,8900,51 657 ,Professionnel,11 578,Moins chère
+42,Life,2016,10990,7 911 ,Professionnel,11 426,Moins chère
+43,Zen,2013,7500,41 535 ,Professionnel,10 744,Moins chère
+44,Life,2016,11999,5 500 ,Professionnel,11 426,Plus chère
+45,Intens,2013,7500,76 000 ,Particulier,8 410,Moins chère
+46,Zen,2013,7900,57 314 ,Professionnel,10 744,Moins chère

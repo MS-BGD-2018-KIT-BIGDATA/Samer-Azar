@@ -1,4 +1,4 @@
-# 80% DONE
+#Pour le numero de telephone il faut utiliser les api du boncoin
 
 import requests
 from bs4 import BeautifulSoup
@@ -52,7 +52,12 @@ def getVersion(description):
 def getPrice(soup):
     price = (soup.find_all('span',class_='value')[0].text).strip()
     price = price.split('\xa0')
-    return price[0]
+    nouveauPrix = "" 
+    for a in price[0]:
+        if a != " ":
+            nouveauPrix += a
+    nouveauPrix = int(nouveauPrix)
+    return nouveauPrix
 
 def getYear(soup):
     year = (soup.find_all('span',class_='value')[4].text).strip()
@@ -75,21 +80,18 @@ def getPrixArgus(version,annee):
     if soup:
         all_versions = soup.find_all(class_="listingResultLine")
         if (version == 'Intens'):
-            #print(version)
             for v in all_versions:
                 versionURL = re.search('intens',v.find("a")['href'])
                 if versionURL:
                     soup2 = getSoupFromURL("https://www.lacentrale.fr/"+v.find("a")['href'])
                     return soup2.find(class_="jsRefinedQuot").text
         elif (version == "Life"):
-            #print(version)
             for v in all_versions:
                 versionURL = re.search('life',v.find("a")['href'])
                 if versionURL:
                     soup2 = getSoupFromURL("https://www.lacentrale.fr/"+v.find("a")['href'])
                     return soup2.find(class_="jsRefinedQuot").text
         elif (version == "Zen"):
-            #print(version)
             for v in all_versions:
                 versionURL = re.search('zen',v.find("a")['href'])
                 if versionURL:
@@ -98,9 +100,20 @@ def getPrixArgus(version,annee):
         else:
             return ""
 
+def comparaisonPrix(prix,prixArgus):
+    nouveauPrix = "" 
+    for a in prixArgus:
+        if a != " ":
+            nouveauPrix += a
+    prixArgus = int(nouveauPrix)
+    comparaison = prix - prixArgus
+    if comparaison > 0:
+        return "Plus chère"
+    else:
+        return "Moins chère"
  
 villes = ['ile_de_france','aquitaine','provence_alpes_cote_d_azur']
-labels = ['Version','Annee','Prix','Kilometrage','Pro/Part','Telephone','PrixArgus','Comparaison']
+labels = ['Version','Annee','Prix','Kilometrage','Pro/Part','PrixArgus','Comparaison']
 results_search = {}
 for ville in villes:
     print('-----')
@@ -117,8 +130,10 @@ for ville in villes:
         kilometrage = getKm(soup)
         proOuPart = getProOuPart(soup)
         prixArgus = getPrixArgus(version,annee)
-        comparaison = ""
-        telephone = ""
-        fichier.append([version,annee,prix,kilometrage,proOuPart,telephone,prixArgus,comparaison])
+        if prixArgus != "":
+            comparaison = comparaisonPrix(prix,prixArgus)
+        else:
+            comparaison = " "
+        fichier.append([version,annee,prix,kilometrage,proOuPart,prixArgus,comparaison])
     df = pd.DataFrame.from_records(fichier, columns=labels)
     df.to_csv(ville + '.csv')
