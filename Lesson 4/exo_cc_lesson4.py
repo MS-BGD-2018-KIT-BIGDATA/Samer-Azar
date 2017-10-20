@@ -1,11 +1,4 @@
-#Pour le numero de telephone il faut utiliser les api du boncoin
-
 import requests
-from bs4 import BeautifulSoup
-import pandas as pd
-import re
-
-
 
 url = "https://open-medicaments.fr/api/v1/medicaments?limit=100&query=ibuprofene"
 r = requests.get(url)
