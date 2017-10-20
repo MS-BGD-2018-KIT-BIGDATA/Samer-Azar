@@ -5,20 +5,6 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import re
 
-def getSoupFromURL(url, method='get', data={}):
-    
-    if method == 'get':
-        res = requests.get(url)
-    elif method == 'post':
-        res = requests.post(url, data=data)
-    else:
-        return None
-    
-    if res.status_code == 200:
-        soup = BeautifulSoup(res.text, 'html.parser')
-        return soup
-    else:
-        return None
 
 
 url = "https://open-medicaments.fr/api/v1/medicaments?limit=100&query=ibuprofene"
